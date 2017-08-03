@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="3.799">
+  <properties />
+  
+  
+            <testcase name="screenshot" time="0.656" classname="jenikinsdemo.TestNGClass1" />
+                <testcase name="excel" time="3.143" classname="jenikinsdemo.TestNGClass1" />
+      
+</testsuite>
