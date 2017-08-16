@@ -2,24 +2,18 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <listeners>
-    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
-    <listener class-name="jenkinsdemo.TestNGCustomReport"/>
+    <listener class-name="test.LocalScreenshot"/>
+    <listener class-name="test.CustomizedEmailableReport"/>
   </listeners>
   <test name="Test(failed)">
     <classes>
-      <class name="jenkinsdemo.TestNGClass1">
+      <class name="test.Test1">
         <methods>
-          <include name="login1"/>
-          <include name="login"/>
+          <include name="invaliduser1"/>
+          <include name="invaliduser2"/>
+          <include name="validuser"/>
         </methods>
-      </class> <!-- jenkinsdemo.TestNGClass1 -->
-      <class name="jenkinsdemo.TestNGClass2">
-        <methods>
-          <include name="browserClose"/>
-          <include name="logout"/>
-        </methods>
-      </class> <!-- jenkinsdemo.TestNGClass2 -->
+      </class> <!-- test.Test1 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

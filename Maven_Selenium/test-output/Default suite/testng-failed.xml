@@ -3,12 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="jenikinsdemo.TestNGClass1">
+      <class name="test.Test2">
         <methods>
-          <include name="excel"/>
-          <include name="login"/>
+          <include name="Testcase1"/>
         </methods>
-      </class> <!-- jenikinsdemo.TestNGClass1 -->
+      </class> <!-- test.Test2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
