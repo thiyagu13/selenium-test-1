@@ -2,24 +2,22 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <listeners>
-    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
-    <listener class-name="jenkinsdemo.TestNGCustomReport"/>
+    <listener class-name="selenium.LocalScreenshot"/>
+    <listener class-name="selenium.CustomizedEmailableReport"/>
   </listeners>
-  <test name="Test(failed)">
+  <test name="Selenium Test(failed)">
+    <groups>
+      <run>
+        <include name="Functional"/>
+        <exclude name="Regression"/>
+      </run>
+    </groups>
     <classes>
-      <class name="jenkinsdemo.TestNGClass1">
+      <class name="selenium.Test2">
         <methods>
-          <include name="login1"/>
-          <include name="login"/>
+          <include name="Testcase1"/>
         </methods>
-      </class> <!-- jenkinsdemo.TestNGClass1 -->
-      <class name="jenkinsdemo.TestNGClass2">
-        <methods>
-          <include name="browserClose"/>
-          <include name="logout"/>
-        </methods>
-      </class> <!-- jenkinsdemo.TestNGClass2 -->
+      </class> <!-- selenium.Test2 -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Selenium Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

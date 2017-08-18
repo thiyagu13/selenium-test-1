@@ -25,7 +25,7 @@
 				<configuration>
 				<forkCount>0</forkCount>
 					<suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
+						<suiteXmlFile>selenium.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
