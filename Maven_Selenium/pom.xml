@@ -29,7 +29,9 @@
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
-
+<properties>
+    <jenkins.e2eTests.reportsDirectory>target/protractor-reports</jenkins.e2eTests.reportsDirectory>
+</properties>
 		</plugins>
 
 	</build>
@@ -64,7 +66,5 @@
 		</dependency>
 
 	</dependencies>
-	<properties>
-    <jenkins.e2eTests.reportsDirectory>target/protractor-reports</jenkins.e2eTests.reportsDirectory>
-</properties>
+	
 </project>
