@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name='selenium.LocalScreenshot' />
+		<listener class-name='selenium.CustomizedEmailableReport' />
+	</listeners>
+
+	<test name="Selenium Test">
+		<groups>
+			<run>
+				<include name="Functional"/>
+				<exclude name="Regression"/>
+			</run>
+		</groups>
+
+		<classes>
+			<!-- <class name="selenium.Test1" /> -->
+			<class name="selenium.Test2" />
+			<class name="selenium.Test3" />
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
