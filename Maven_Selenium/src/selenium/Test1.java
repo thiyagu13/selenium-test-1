@@ -1,4 +1,4 @@
-package test;
+package selenium;
 
 
 
@@ -82,9 +82,10 @@ public class Test1 {
   }
       
       @Test(priority=4)
-      public void browserclose() throws InterruptedException {
+      public void browserclose() throws Exception {
     	  Thread.sleep(2000);
     	  driver.close();
-	
+    	//  SendMail.execute("customized-emailable-report.html");
   }
+      
 }

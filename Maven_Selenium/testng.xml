@@ -11,8 +11,8 @@
     <classes>
      <!--  <class name="test.ScreenshotInResultsTest"/> -->
     <!-- <class name="test.Test1"/> -->
-      <class name="test.Test2"/>
-      <class name="test.Test3"/> 
+      <class name="selenium.Test2"/>
+      <class name="selenium.Test3"/> 
       
     </classes>
   </test> <!-- Test -->
