@@ -5,9 +5,13 @@
 	<artifactId>Maven_Selenium</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
+
 	<properties>
 		<jenkins.e2eTests.reportsDirectory>target/protractor-reports</jenkins.e2eTests.reportsDirectory>
 	</properties>
+
+
+	
 
 	<build>
 		<sourceDirectory>src</sourceDirectory>
@@ -46,6 +50,7 @@
 			<artifactId>selenium-java</artifactId>
 			<version>3.4.0</version>
 		</dependency>
+		
 
 		<dependency>
 			<groupId>org.apache.poi</groupId>
@@ -69,4 +74,5 @@
 
 
 	</dependencies>
+	
 </project>
