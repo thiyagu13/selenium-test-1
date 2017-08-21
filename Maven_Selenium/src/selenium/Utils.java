@@ -1,15 +1,12 @@
 package selenium;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -59,21 +56,15 @@ public class Utils {
 	
 	
 
-	public static XSSFSheet getExcelSheet() throws IOException {
+	/*public static XSSFSheet getExcelSheet() throws IOException {
 		FileInputStream file = new FileInputStream(Constant.EXCEL_PATH);
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		return sheet;
-	}
+	}*/
 
 	
-	
-	
-	
-	
-	
-	
-	
+		
 	
 	
 
