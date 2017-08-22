@@ -8,11 +8,11 @@ import org.testng.annotations.Test;
 public class Selenium_Test1 {
 	@Test
 	public void testgooglrsearch(){
-	
+	System.setProperty("webdriver.chrome.driver", ".\\chromedriver.exe");
 	WebDriver driver = new ChromeDriver();
 	//it will open the goggle page
 	driver.get("http://google.in");
-	//we expect the title “Google “ should be present
+	//we expect the title â€œGoogle â€œ should be present
 	String Expectedtitle = "Google";
 	//it will fetch the actual title
 	String Actualtitle = driver.getTitle();
