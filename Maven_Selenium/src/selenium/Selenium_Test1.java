@@ -1,18 +1,22 @@
 package selenium;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class Selenium_Test1 {
 	@Test
 	public void testgooglrsearch(){
+		System.setProperty(Constant.GECKO_DRIVER, Constant.GECKO_DRIVER_PATH);
+		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+		capabilities.setCapability("marionette", true);
+		WebDriver driver = new FirefoxDriver(capabilities);
 	
-	WebDriver driver = new ChromeDriver();
 	//it will open the goggle page
 	driver.get("http://google.in");
-	//we expect the title “Google “ should be present
+	//we expect the title â€œGoogle â€œ should be present
 	String Expectedtitle = "Google";
 	//it will fetch the actual title
 	String Actualtitle = driver.getTitle();
