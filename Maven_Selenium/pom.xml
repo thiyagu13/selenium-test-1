@@ -121,10 +121,9 @@
 		</dependency>
 
 		
-		
 	</dependencies>
 
-	<properties>
+		<properties>
 		<jenkins.e2eTests.reportsDirectory>target/protractor-reports</jenkins.e2eTests.reportsDirectory>
 	</properties>
 
