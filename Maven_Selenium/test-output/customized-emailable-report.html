@@ -25,30 +25,36 @@ td,th {border:1px solid #009;padding:.25em .5em}
 <table cellspacing="0" cellpadding="0" class="testOverview">
 <tr><th>Test</th><th># passed</th><th># skipped</th><th># failed</th><th>Start<br/>Time</th><th>End<br/>Time</th><th>Total<br/>Time(hh:mm:ss)</th><th>Included<br/>Groups</th><th>Excluded<br/>Groups</th></tr>
 <tr><th colspan="10">Suite</th></tr>
-<tr><td style="text-align:left;padding-right:2em"><a href="#t1"><b>Selenium Test</b></a></td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">11:59:47</td></td>
-<td class="numi">12:00:03</td></td>
-<td class="numi">00:00:15</td><td class="numi">Functional </td><td class="numi">Regression </td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1"><b>Selenium Test</b></a></td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">14:47:33</td></td>
+<td class="numi">14:47:45</td></td>
+<td class="numi">00:00:11</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
 <tr><th>Class</th><th>Method</th><th>Exception & screenshot</th><th>Start Time </th><th>Time<br/>(hh:mm:ss)</th></tr>
 <tr><th colspan="5">Suite</th></tr>
 <tr id="t1"><th colspan="5">Selenium Test &#8212; failed</th></tr>
-<tr class="failedodd"><td>selenium.Test2</td><td><a href="#m1"><b>Testcase1</b> (Functional) </a></td><td class="numi" style="text-align:left;padding-right:2em">java.lang.AssertionError: Failed Test case<br/><a href=file:///C:\selenium\Git\Maven_Selenium\screenshots\LatestResults\Test2\Testcase1.png> <img width='100' height='100' src=file:///C:\selenium\Git\Maven_Selenium\screenshots\LatestResults\Test2\Testcase1.png> </a><br/></td><td style="text-align:right">11:59:47</td><td class="numi">00:00:15</td></tr>
-<tr><th colspan="5">Selenium Test &#8212; passed</th></tr>
-<tr class="passedodd"><td>selenium.Test2</td><td><a href="#m2"><b>functional_Test</b> (Functional) </a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">12:00:03</td><td class="numi">00:00:00</td></tr>
+<tr class="failedodd"><td rowspan="2">selenium.ScreenshotInResultsTest</td><td><a href="#m1"><b>openFacebook</b>  </a></td><td class="numi" style="text-align:left;padding-right:2em">java.lang.AssertionError: Test was failed<br/><a href=file:///C:\Users\Easy solutions\git\selenium-test\Maven_Selenium\screenshots\LatestResults\ScreenshotInResultsTest\openFacebook.png> <img width='100' height='100' src=file:///C:\Users\Easy solutions\git\selenium-test\Maven_Selenium\screenshots\LatestResults\ScreenshotInResultsTest\openFacebook.png> </a><br/></td><td style="text-align:right">14:47:38</td><td class="numi">00:00:03</td></tr><tr class="failedodd"><td><a href="#m2"><b>openGoogle</b>  </a></td><td class="numi" style="text-align:left;padding-right:2em">java.lang.AssertionError: Test was failed<br/><a href=file:///C:\Users\Easy solutions\git\selenium-test\Maven_Selenium\screenshots\LatestResults\ScreenshotInResultsTest\openGoogle.png> <img width='100' height='100' src=file:///C:\Users\Easy solutions\git\selenium-test\Maven_Selenium\screenshots\LatestResults\ScreenshotInResultsTest\openGoogle.png> </a><br/></td><td style="text-align:right">14:47:42</td><td class="numi">00:00:01</td></tr>
 </table>
 <h1>Selenium Test</h1>
-<h2 id="m1">selenium.Test2:Testcase1</h2>
+<h2 id="m1">selenium.ScreenshotInResultsTest:openFacebook</h2>
 <div>
 <h3>Test Messages</h3>
-<a href=file:///C:\selenium\Git\Maven_Selenium\screenshots\LatestResults\Test2\Testcase1.png> <img width='100' height='100' src=file:///C:\selenium\Git\Maven_Selenium\screenshots\LatestResults\Test2\Testcase1.png> </a><br/>
+<a href=file:///C:\Users\Easy solutions\git\selenium-test\Maven_Selenium\screenshots\LatestResults\ScreenshotInResultsTest\openFacebook.png> <img width='100' height='100' src=file:///C:\Users\Easy solutions\git\selenium-test\Maven_Selenium\screenshots\LatestResults\ScreenshotInResultsTest\openFacebook.png> </a><br/>
 <h3>Failure</h3>
-<div class="stacktrace">java.lang.AssertionError: Failed Test case
-	at selenium.Test2.Testcase1(Test2.java:30)
+<div class="stacktrace">java.lang.AssertionError: Test was failed
+	at selenium.ScreenshotInResultsTest.openFacebook(ScreenshotInResultsTest.java:33)
 ... Removed 26 stack frames</div>
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">selenium.Test2:functional_Test</h2>
+<h2 id="m2">selenium.ScreenshotInResultsTest:openGoogle</h2>
+<div>
+<h3>Test Messages</h3>
+<a href=file:///C:\Users\Easy solutions\git\selenium-test\Maven_Selenium\screenshots\LatestResults\ScreenshotInResultsTest\openGoogle.png> <img width='100' height='100' src=file:///C:\Users\Easy solutions\git\selenium-test\Maven_Selenium\screenshots\LatestResults\ScreenshotInResultsTest\openGoogle.png> </a><br/>
+<h3>Failure</h3>
+<div class="stacktrace">java.lang.AssertionError: Test was failed
+	at selenium.ScreenshotInResultsTest.openGoogle(ScreenshotInResultsTest.java:41)
+... Removed 26 stack frames</div>
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <center> Report customized </center>
 </body></html>

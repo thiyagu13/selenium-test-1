@@ -32,7 +32,7 @@ public class LocalScreenshot extends TestListenerAdapter {
 		// driver= Test1.gerDriverDetails(result.getTestClass().getName());
 			
 	
-		driver = Test2.gerDriverDetails(result.getTestClass().getName());
+		driver = MyTest.gerDriverDetails(result.getTestClass().getName());
 		String imagePathInHost = "file:///" + System.getProperty("user.dir")
 				+ Seperator + "screenshots" + Seperator + "LatestResults"
 				+ Seperator + sTestClassName + Seperator
