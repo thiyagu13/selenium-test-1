@@ -71,6 +71,7 @@
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/com.github.yev/screenshot -->
+		
 		<dependency>
 			<groupId>com.github.yev</groupId>
 			<artifactId>screenshot</artifactId>
@@ -119,9 +120,10 @@
 			<version>3.16</version>
 		</dependency>
 
-		</dependencies>
+		
+	</dependencies>
 
-	<properties>
+		<properties>
 		<jenkins.e2eTests.reportsDirectory>target/protractor-reports</jenkins.e2eTests.reportsDirectory>
 	</properties>
 
