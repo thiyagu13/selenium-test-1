@@ -71,6 +71,7 @@
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/com.github.yev/screenshot -->
+		
 		<dependency>
 			<groupId>com.github.yev</groupId>
 			<artifactId>screenshot</artifactId>
