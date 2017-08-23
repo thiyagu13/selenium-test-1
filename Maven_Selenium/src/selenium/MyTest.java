@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import java.util.HashMap;
 
 
-public class ScreenshotInResultsTest {
+public class MyTest {
 
     private static HashMap<String, WebDriver> driverObjMap=new HashMap<String, WebDriver>();
     WebDriver driver;
@@ -38,7 +38,7 @@ public class ScreenshotInResultsTest {
     public void openGoogle(){
         driver.get("http://google.com");
         System.out.println("Google Opened ..");
-        Assert.fail("Test was failed");
+      //  Assert.fail("Test was failed");
 
     }
 

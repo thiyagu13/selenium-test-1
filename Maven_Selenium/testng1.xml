@@ -8,17 +8,17 @@
 	</listeners>
 
 	<test name="Selenium Test">
-		<groups>
+		<!-- <groups>
 			<run>
 				<include name="Functional"/>
 				<exclude name="Regression"/>
 			</run>
-		</groups>
+		</groups> -->
 
 		<classes>
-			<!-- <class name="selenium.Test1" /> -->
-			<class name="selenium.Test2" />
-			<class name="selenium.Test3" />
+			
+			<class name="selenium.MyTest" />
+			
 
 		</classes>
 	</test> <!-- Test -->

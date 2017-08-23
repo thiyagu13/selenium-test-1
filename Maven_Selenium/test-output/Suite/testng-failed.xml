@@ -6,18 +6,15 @@
     <listener class-name="selenium.CustomizedEmailableReport"/>
   </listeners>
   <test name="Selenium Test(failed)">
-    <groups>
-      <run>
-        <include name="Functional"/>
-        <exclude name="Regression"/>
-      </run>
-    </groups>
     <classes>
-      <class name="selenium.Test2">
+      <class name="selenium.ScreenshotInResultsTest">
         <methods>
-          <include name="Testcase1"/>
+          <include name="openFacebook"/>
+          <include name="openGoogle"/>
+          <include name="browserInstantiate"/>
+          <include name="quitDriver"/>
         </methods>
-      </class> <!-- selenium.Test2 -->
+      </class> <!-- selenium.ScreenshotInResultsTest -->
     </classes>
   </test> <!-- Selenium Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
