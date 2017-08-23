@@ -19,7 +19,6 @@
 			
 			<class name="selenium.MyTest" />
 			
-
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
