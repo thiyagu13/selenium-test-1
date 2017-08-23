@@ -14,6 +14,14 @@ public class MyTest {
 
     private static HashMap<String, WebDriver> driverObjMap=new HashMap<String, WebDriver>();
     WebDriver driver;
+    public static WebDriver gerDriverDetails(String className){
+        return driverObjMap.get(className);
+    }
+
+    public static HashMap<String, WebDriver> gerDriverObjMap(){
+        return driverObjMap;
+    }
+
     @BeforeClass
     public void browserInstantiate(){
     	/*System.setProperty("webdriver.gecko.driver", "C:\\selenium\\Selenium_Project\\geckodriver.exe");
@@ -30,7 +38,7 @@ public class MyTest {
     public void openFacebook(){
         driver.get("http://facebook.com");
         System.out.println("Facebook Opened ..");
-        Assert.fail("Test was failed");
+      //  Assert.fail("Test was failed");
 
     }
 
@@ -42,20 +50,8 @@ public class MyTest {
 
     }
 
-    public static WebDriver gerDriverDetails(String className){
-        return driverObjMap.get(className);
-    }
-
-    public static HashMap<String, WebDriver> gerDriverObjMap(){
-        return driverObjMap;
-    }
-
     @AfterClass
     public void quitDriver(){
-        if(gerDriverObjMap().get(getClass().getName())!=null){
-            gerDriverObjMap().get(getClass().getName()).quit();
-            gerDriverObjMap().remove(getClass().getName());
-            System.out.println("driver for class : "+ getClass().getName() + "is closed");
-        }
+        driver.quit();
     }
 }

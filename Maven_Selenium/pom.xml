@@ -26,6 +26,7 @@
 					<forkCount>0</forkCount>
 					<suiteXmlFiles>
 						<suiteXmlFile>testng1.xml</suiteXmlFile>
+						
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
@@ -42,7 +43,20 @@
 			<artifactId>selenium-java</artifactId>
 			<version>3.4.0</version>
 		</dependency>
-
+		
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.11</version>
+			<scope>compile</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
 
 		<dependency>
 			<groupId>org.apache.poi</groupId>
@@ -62,6 +76,7 @@
 			<version>6.11</version>
 			<scope>compile</scope>
 		</dependency>
+
 
 
 		<!-- https://mvnrepository.com/artifact/com.github.yev/screenshot -->
@@ -112,6 +127,7 @@
 			<artifactId>poi-ooxml</artifactId>
 			<version>3.16</version>
 		</dependency>
+
 		
 		<dependency>
 			<groupId>junit</groupId>
@@ -121,8 +137,10 @@
 		</dependency>
 
 	</dependencies>
+
 	<properties>
 		<jenkins.e2eTests.reportsDirectory>target/protractor-reports</jenkins.e2eTests.reportsDirectory>
 	</properties>
+
 
 </project>
