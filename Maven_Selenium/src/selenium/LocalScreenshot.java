@@ -1,6 +1,6 @@
 package selenium;
 
-import selenium.Test1;
+import selenium.MyTest;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;

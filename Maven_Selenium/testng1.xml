@@ -2,12 +2,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 
-	<listeners>
+	 <!-- <listeners>
 		<listener class-name='selenium.LocalScreenshot' />
 		<listener class-name='selenium.CustomizedEmailableReport' />
-	</listeners>
+	</listeners> -->
 
-	<test name="Selenium Test">
+	<test name="Selenium">
 		<!-- <groups>
 			<run>
 				<include name="Functional"/>
