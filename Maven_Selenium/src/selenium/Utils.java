@@ -35,7 +35,7 @@ public class Utils {
 		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
 		capabilities.setCapability("marionette", true);
 		WebDriver driver = new FirefoxDriver(capabilities);
-		driver.get(Constant.URL);
+		//driver.get(Constant.URL);
 		
 		return driver;
 	}
