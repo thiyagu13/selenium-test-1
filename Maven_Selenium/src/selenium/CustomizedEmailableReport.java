@@ -622,7 +622,7 @@ public class CustomizedEmailableReport implements IReporter {
         // -------------------------------------------------------------
 
         /** Arranges methods by classname and method name */
-        @SuppressWarnings("unchecked")
+       // @SuppressWarnings("unchecked")
 		@Override
         public int compare(IInvokedMethod o1, IInvokedMethod o2) {
             //System.out.println("Comparing " + ((ITestNGMethod) o1).getMethodName() + " " + o1.getDate() + " and " + ((ITestNGMethod) o2).getMethodName() + " " + o2.getDate());
@@ -634,7 +634,7 @@ public class CustomizedEmailableReport implements IReporter {
             if (r == 0) {
                 //System.out.println("First method name "+o1.getTestMethod());
                 //System.out.println("second method name "+o2.getTestMethod());
-                r=o1.getTestMethod().compareTo(o2.getTestMethod());
+               // r=o1.getTestMethod().compareTo(o2.getTestMethod());
 
             }
             return r;
