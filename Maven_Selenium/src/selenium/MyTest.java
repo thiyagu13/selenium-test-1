@@ -27,26 +27,8 @@ public class MyTest {
     }
 
 	WebDriver driver = Utils.getWebDriverInstance();
-    @BeforeClass
-    public void browserInstantiate(){
 
-    	/*System.setProperty("webdriver.gecko.driver",Constant.GECKO_DRIVER_PATH);
-    	DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-    	capabilities.setCapability("marionette", true);
-    	WebDriver driver = new FirefoxDriver(capabilities);
-    	//driver = new ChromeDriver();
-       // driverObjMap.put(getClass().getName(),driver);
-
-    	System.setProperty(Constant.GECKO_DRIVER, Constant.GECKO_DRIVER_PATH);
-		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-		capabilities.setCapability("marionette", true);    	
-		WebDriver driver = new FirefoxDriver(capabilities); 
-    	//driver = new ChromeDriver();
-        driverObjMap.put(getClass().getName(),driver);
-
-        driver.manage().window().maximize();
-        System.out.println("Browser Instantiated..");*/
-    }
+  
 
     @Test(priority=1)
     public void openFacebook(){
@@ -61,11 +43,6 @@ public class MyTest {
         driver.get("http://google.com");
         System.out.println("Google Opened ..");
       //  Assert.fail("Test was failed");
-
-    }
-
-    @AfterClass
-    public void quitDriver(){
         driver.quit();
-    }
-}
+
+    }}
