@@ -1,7 +1,8 @@
 package selenium;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -24,11 +25,11 @@ public class MyTest {
 
     @BeforeClass
     public void browserInstantiate(){
-    	/*System.setProperty("webdriver.gecko.driver", "C:\\selenium\\Selenium_Project\\geckodriver.exe");
+    	System.setProperty("webdriver.gecko.driver", "C:\\selenium\\Selenium_Project\\geckodriver.exe");
 		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
 		capabilities.setCapability("marionette", true);    	
-		WebDriver driver = new FirefoxDriver(capabilities); */
-    	driver = new ChromeDriver();
+		WebDriver driver = new FirefoxDriver(capabilities); 
+    	//driver = new ChromeDriver();
         driverObjMap.put(getClass().getName(),driver);
         driver.manage().window().maximize();
         System.out.println("Browser Instantiated..");
