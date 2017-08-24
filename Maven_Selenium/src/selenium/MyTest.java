@@ -27,9 +27,10 @@ public class MyTest {
         return driverObjMap;
     }*/
 
+
 	WebDriver driver = Utils.getWebDriverInstance();
 
-  
+ 
 
     @Test(priority=1)
     public void openFacebook(){
