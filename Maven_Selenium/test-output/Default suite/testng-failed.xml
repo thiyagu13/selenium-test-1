@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="selenium.ScreenshotInResultsTest">
+      <class name="selenium.MyTest">
         <methods>
           <include name="openFacebook"/>
           <include name="openGoogle"/>
           <include name="browserInstantiate"/>
-          <include name="quitDriver"/>
         </methods>
-      </class> <!-- selenium.ScreenshotInResultsTest -->
+      </class> <!-- selenium.MyTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
