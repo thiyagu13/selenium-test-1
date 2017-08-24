@@ -619,7 +619,7 @@ public class CustomizedEmailableReport implements IReporter {
     // ~ Inner Classes --------------------------------------------------------
     /** Arranges methods by classname and method name */
     private class TestSorter implements Comparator<IInvokedMethod> {
-        // ~ Methods
+        //  Methods
         // -------------------------------------------------------------
 
         /** Arranges methods by classname and method name */
@@ -666,7 +666,7 @@ public class CustomizedEmailableReport implements IReporter {
         public int compare(ITestResult o1, ITestResult o2) {
             //return (int) (o1.getMethod().getDate() - o2.getMethod().getDate());
             //System.out.println("First method class name "+o1.getTestClass().getName());
-            //System.out.println("second method class name "+o2.getTestClass().getName());
+            System.out.println("second method class name "+o2.getTestClass().getName());
             int result = o1.getTestClass().getName().compareTo(o2.getTestClass().getName());
             if (result == 0) {
                 //System.out.println("First method name "+o1.getMethod().getMethodName());
