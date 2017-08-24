@@ -580,6 +580,7 @@ public class CustomizedEmailableReport implements IReporter {
         out.println("><th colspan=\"" + cq + "\">" + label + "</th></tr>");
         row = 0;
     }
+    
 
     /** Starts HTML stream */
     protected void startHtml(PrintWriter out) {
@@ -642,6 +643,7 @@ public class CustomizedEmailableReport implements IReporter {
 
     }
 
+    
     private class TestMethodSorter implements Comparator<ITestNGMethod> {
         @Override
         public int compare(ITestNGMethod o1, ITestNGMethod o2) {
