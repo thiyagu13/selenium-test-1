@@ -5,6 +5,7 @@ import org.testng.collections.Lists;
 import org.testng.internal.Utils;
 import org.testng.log4testng.Logger;
 import org.testng.xml.XmlSuite;
+
 import java.io.*;
 import java.text.DateFormat;
 import java.text.DecimalFormat;
@@ -364,7 +365,8 @@ public class CustomizedEmailableReport implements IReporter {
      *
      * @param tests
      */
-    private void getParameters(IResultMap tests) {
+    @SuppressWarnings("unused")
+	private void getParameters(IResultMap tests) {
 
         for (ITestResult result : tests.getAllResults()) {
             methodIndex++;
@@ -620,7 +622,8 @@ public class CustomizedEmailableReport implements IReporter {
         // -------------------------------------------------------------
 
         /** Arranges methods by classname and method name */
-        @Override
+        @SuppressWarnings("unchecked")
+		@Override
         public int compare(IInvokedMethod o1, IInvokedMethod o2) {
             //System.out.println("Comparing " + ((ITestNGMethod) o1).getMethodName() + " " + o1.getDate() + " and " + ((ITestNGMethod) o2).getMethodName() + " " + o2.getDate());
             //return (int) (o1.getDate() - o2.getDate());
