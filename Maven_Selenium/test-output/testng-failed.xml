@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="selenium.LocalScreenshot"/>
+    <listener class-name="selenium.CustomizedEmailableReport"/>
+  </listeners>
+  <test name="Test(failed)">
     <classes>
-      <class name="selenium.MyTest">
+      <class name="selenium.ScreenshotInResultsTest">
         <methods>
-          <include name="openFacebook"/>
           <include name="openGoogle"/>
           <include name="browserInstantiate"/>
+          <include name="quitDriver"/>
         </methods>
-      </class> <!-- selenium.MyTest -->
+      </class> <!-- selenium.ScreenshotInResultsTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

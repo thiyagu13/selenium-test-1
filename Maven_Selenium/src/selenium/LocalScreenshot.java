@@ -32,17 +32,15 @@ public class LocalScreenshot extends TestListenerAdapter {
 		// driver= Test1.gerDriverDetails(result.getTestClass().getName());
 			
 	
-		//driver = MyTest.gerDriverDetails(result.getTestClass().getName());
+		driver = ScreenshotInResultsTest.gerDriverDetails(result.getTestClass().getName());
 		String imagePathInHost = "file:///" + System.getProperty("user.dir")
 				+ Seperator + "screenshots" + Seperator + "LatestResults"
 				+ Seperator + sTestClassName + Seperator
 				+ captureScreenshot(driver, sTestClassName, sFileName);
 
-		// System.out.println("Image name:" +
-		// captureScreenshot(driver,sTestClassName,sFileName));
-		// System.out.println("Driver " + driver +
-		// "Testclass Name "+sTestClassName+"File Name" +sFileName);
-		// System.out.println("Image path...."+imagePathInHost);
+		 System.out.println("Image name:" + captureScreenshot(driver,sTestClassName,sFileName));
+		 System.out.println("Driver " + driver + "Testclass Name "+sTestClassName+"File Name" +sFileName);
+		 System.out.println("Image path...."+imagePathInHost);
 		Reporter.log("<a href=" + imagePathInHost + "> <img width='100' height='100' src=" + imagePathInHost + "> </a>");
 		// Reporter.setCurrentTestResult(null);
 

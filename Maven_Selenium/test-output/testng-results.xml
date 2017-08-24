@@ -1,22 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
+    <line>
+      <![CDATA[<a href=file:///C:\Users\Easy solutions\git\selenium-test\Maven_Selenium\screenshots\LatestResults\ScreenshotInResultsTest\openGoogle.png> <img width='100' height='100' src=file:///C:\Users\Easy solutions\git\selenium-test\Maven_Selenium\screenshots\LatestResults\ScreenshotInResultsTest\openGoogle.png> </a>]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10503" started-at="2017-08-24T08:55:07Z" finished-at="2017-08-24T08:55:17Z">
+  <suite name="Suite" duration-ms="29592" started-at="2017-08-24T09:55:08Z" finished-at="2017-08-24T09:55:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10503" started-at="2017-08-24T08:55:07Z" finished-at="2017-08-24T08:55:17Z">
-      <class name="selenium.MyTest">
-        <test-method status="PASS" signature="openFacebook()[pri:1, instance:selenium.MyTest@1e0b4072]" name="openFacebook" duration-ms="7464" started-at="2017-08-24T14:25:07Z" finished-at="2017-08-24T14:25:14Z">
+    <test name="Test" duration-ms="29592" started-at="2017-08-24T09:55:08Z" finished-at="2017-08-24T09:55:38Z">
+      <class name="selenium.ScreenshotInResultsTest">
+        <test-method status="PASS" signature="browserInstantiate()[pri:0, instance:selenium.ScreenshotInResultsTest@402a079c]" name="browserInstantiate" is-config="true" duration-ms="22378" started-at="2017-08-24T15:25:08Z" finished-at="2017-08-24T15:25:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openFacebook -->
-        <test-method status="PASS" signature="openGoogle()[pri:2, instance:selenium.MyTest@1e0b4072]" name="openGoogle" duration-ms="3004" started-at="2017-08-24T14:25:14Z" finished-at="2017-08-24T14:25:17Z">
+        </test-method> <!-- browserInstantiate -->
+        <test-method status="FAIL" signature="openGoogle()[pri:0, instance:selenium.ScreenshotInResultsTest@402a079c]" name="openGoogle" duration-ms="3561" started-at="2017-08-24T15:25:30Z" finished-at="2017-08-24T15:25:34Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test was failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test was failed
+	at org.testng.Assert.fail(Assert.java:94)
+	at selenium.ScreenshotInResultsTest.openGoogle(ScreenshotInResultsTest.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
+            <line>
+              <![CDATA[<a href=file:///C:\Users\Easy solutions\git\selenium-test\Maven_Selenium\screenshots\LatestResults\ScreenshotInResultsTest\openGoogle.png> <img width='100' height='100' src=file:///C:\Users\Easy solutions\git\selenium-test\Maven_Selenium\screenshots\LatestResults\ScreenshotInResultsTest\openGoogle.png> </a>]]>
+            </line>
           </reporter-output>
         </test-method> <!-- openGoogle -->
-      </class> <!-- selenium.MyTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:selenium.ScreenshotInResultsTest@402a079c]" name="quitDriver" is-config="true" duration-ms="2732" started-at="2017-08-24T15:25:35Z" finished-at="2017-08-24T15:25:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- selenium.ScreenshotInResultsTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
-
