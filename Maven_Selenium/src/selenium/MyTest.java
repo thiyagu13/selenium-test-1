@@ -24,11 +24,11 @@ public class MyTest {
 
     @BeforeClass
     public void browserInstantiate(){
-    	/*System.setProperty("webdriver.gecko.driver", "C:\\selenium\\Selenium_Project\\geckodriver.exe");
+    	System.setProperty("webdriver.gecko.driver", "C:\\selenium\\Selenium_Project\\geckodriver.exe");
 		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
 		capabilities.setCapability("marionette", true);    	
-		WebDriver driver = new FirefoxDriver(capabilities); */
-    	driver = new ChromeDriver();
+		WebDriver driver = new FirefoxDriver(capabilities); 
+    	//driver = new ChromeDriver();
         driverObjMap.put(getClass().getName(),driver);
         driver.manage().window().maximize();
         System.out.println("Browser Instantiated..");
