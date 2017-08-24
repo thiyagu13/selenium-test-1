@@ -16,7 +16,7 @@ import java.util.HashMap;
 
 
 public class MyTest {
-
+/*
    private static HashMap<String, WebDriver> driverObjMap=new HashMap<String, WebDriver>();
     WebDriver driver = new ChromeDriver();
     public static WebDriver gerDriverDetails(String className){
@@ -25,9 +25,9 @@ public class MyTest {
 
     public static HashMap<String, WebDriver> gerDriverObjMap(){
         return driverObjMap;
-    }
+    }*/
 
-	/*WebDriver driver = Utils.getWebDriverInstance();*/
+	WebDriver driver = Utils.getWebDriverInstance();
 
   
 

@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5385" started-at="2017-08-24T07:37:41Z" finished-at="2017-08-24T07:37:46Z">
+  <suite name="Default suite" duration-ms="10503" started-at="2017-08-24T08:55:07Z" finished-at="2017-08-24T08:55:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5385" started-at="2017-08-24T07:37:41Z" finished-at="2017-08-24T07:37:46Z">
+    <test name="Default test" duration-ms="10503" started-at="2017-08-24T08:55:07Z" finished-at="2017-08-24T08:55:17Z">
       <class name="selenium.MyTest">
-        <test-method status="PASS" signature="openFacebook()[pri:1, instance:selenium.MyTest@1e0b4072]" name="openFacebook" duration-ms="2762" started-at="2017-08-24T13:07:41Z" finished-at="2017-08-24T13:07:43Z">
+        <test-method status="PASS" signature="openFacebook()[pri:1, instance:selenium.MyTest@1e0b4072]" name="openFacebook" duration-ms="7464" started-at="2017-08-24T14:25:07Z" finished-at="2017-08-24T14:25:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openFacebook -->
-        <test-method status="PASS" signature="openGoogle()[pri:2, instance:selenium.MyTest@1e0b4072]" name="openGoogle" duration-ms="2520" started-at="2017-08-24T13:07:43Z" finished-at="2017-08-24T13:07:46Z">
+        <test-method status="PASS" signature="openGoogle()[pri:2, instance:selenium.MyTest@1e0b4072]" name="openGoogle" duration-ms="3004" started-at="2017-08-24T14:25:14Z" finished-at="2017-08-24T14:25:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openGoogle -->
@@ -19,3 +19,4 @@
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
+
