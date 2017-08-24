@@ -2,28 +2,20 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="5175" started-at="2017-08-24T07:21:49Z" finished-at="2017-08-24T07:21:55Z">
+  <suite name="Default suite" duration-ms="5385" started-at="2017-08-24T07:37:41Z" finished-at="2017-08-24T07:37:46Z">
     <groups>
     </groups>
-    <test name="Selenium" duration-ms="5175" started-at="2017-08-24T07:21:49Z" finished-at="2017-08-24T07:21:55Z">
+    <test name="Default test" duration-ms="5385" started-at="2017-08-24T07:37:41Z" finished-at="2017-08-24T07:37:46Z">
       <class name="selenium.MyTest">
-        <test-method status="PASS" signature="browserInstantiate()[pri:0, instance:selenium.MyTest@71ba6d4e]" name="browserInstantiate" is-config="true" duration-ms="8" started-at="2017-08-24T12:51:49Z" finished-at="2017-08-24T12:51:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInstantiate -->
-        <test-method status="PASS" signature="openFacebook()[pri:1, instance:selenium.MyTest@71ba6d4e]" name="openFacebook" duration-ms="2990" started-at="2017-08-24T12:51:49Z" finished-at="2017-08-24T12:51:52Z">
+        <test-method status="PASS" signature="openFacebook()[pri:1, instance:selenium.MyTest@1e0b4072]" name="openFacebook" duration-ms="2762" started-at="2017-08-24T13:07:41Z" finished-at="2017-08-24T13:07:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openFacebook -->
-        <test-method status="PASS" signature="openGoogle()[pri:2, instance:selenium.MyTest@71ba6d4e]" name="openGoogle" duration-ms="1380" started-at="2017-08-24T12:51:52Z" finished-at="2017-08-24T12:51:54Z">
+        <test-method status="PASS" signature="openGoogle()[pri:2, instance:selenium.MyTest@1e0b4072]" name="openGoogle" duration-ms="2520" started-at="2017-08-24T13:07:43Z" finished-at="2017-08-24T13:07:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openGoogle -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:selenium.MyTest@71ba6d4e]" name="quitDriver" is-config="true" duration-ms="770" started-at="2017-08-24T12:51:54Z" finished-at="2017-08-24T12:51:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
       </class> <!-- selenium.MyTest -->
-    </test> <!-- Selenium -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
