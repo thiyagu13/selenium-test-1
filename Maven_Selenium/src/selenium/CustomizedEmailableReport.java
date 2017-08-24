@@ -580,6 +580,7 @@ public class CustomizedEmailableReport implements IReporter {
         out.println("><th colspan=\"" + cq + "\">" + label + "</th></tr>");
         row = 0;
     }
+    
 
     /** Starts HTML stream */
     protected void startHtml(PrintWriter out) {
@@ -618,11 +619,11 @@ public class CustomizedEmailableReport implements IReporter {
     // ~ Inner Classes --------------------------------------------------------
     /** Arranges methods by classname and method name */
     private class TestSorter implements Comparator<IInvokedMethod> {
-        // ~ Methods
+        //  Methods
         // -------------------------------------------------------------
 
         /** Arranges methods by classname and method name */
-        @SuppressWarnings("unchecked")
+       // @SuppressWarnings("unchecked")
 		@Override
         public int compare(IInvokedMethod o1, IInvokedMethod o2) {
             //System.out.println("Comparing " + ((ITestNGMethod) o1).getMethodName() + " " + o1.getDate() + " and " + ((ITestNGMethod) o2).getMethodName() + " " + o2.getDate());
@@ -634,7 +635,7 @@ public class CustomizedEmailableReport implements IReporter {
             if (r == 0) {
                 //System.out.println("First method name "+o1.getTestMethod());
                 //System.out.println("second method name "+o2.getTestMethod());
-                r=o1.getTestMethod().compareTo(o2.getTestMethod());
+               // r=o1.getTestMethod().compareTo(o2.getTestMethod());
 
             }
             return r;
@@ -642,6 +643,7 @@ public class CustomizedEmailableReport implements IReporter {
 
     }
 
+    
     private class TestMethodSorter implements Comparator<ITestNGMethod> {
         @Override
         public int compare(ITestNGMethod o1, ITestNGMethod o2) {
@@ -664,7 +666,7 @@ public class CustomizedEmailableReport implements IReporter {
         public int compare(ITestResult o1, ITestResult o2) {
             //return (int) (o1.getMethod().getDate() - o2.getMethod().getDate());
             //System.out.println("First method class name "+o1.getTestClass().getName());
-            //System.out.println("second method class name "+o2.getTestClass().getName());
+            System.out.println("second method class name "+o2.getTestClass().getName());
             int result = o1.getTestClass().getName().compareTo(o2.getTestClass().getName());
             if (result == 0) {
                 //System.out.println("First method name "+o1.getMethod().getMethodName());
