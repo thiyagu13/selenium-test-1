@@ -26,7 +26,7 @@ public class MyTest {
 
     @BeforeClass
     public void browserInstantiate(){
-    	System.setProperty("webdriver.gecko.driver", "C:\\selenium\\Selenium_Project\\geckodriver.exe");
+    	System.setProperty(Constant.GECKO_DRIVER, Constant.GECKO_DRIVER_PATH);
 		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
 		capabilities.setCapability("marionette", true);    	
 		WebDriver driver = new FirefoxDriver(capabilities); 
