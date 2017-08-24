@@ -1,7 +1,9 @@
 package selenium;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+
+//import org.openqa.selenium.chrome.ChromeDriver;
+
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
@@ -25,7 +27,8 @@ public class MyTest {
     }
 
 	WebDriver driver = Utils.getWebDriverInstance();
-   
+
+  
 
     @Test(priority=1)
     public void openFacebook(){
@@ -42,7 +45,4 @@ public class MyTest {
       //  Assert.fail("Test was failed");
         driver.quit();
 
-    }
-
-  
-}
+    }}
