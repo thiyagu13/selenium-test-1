@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 //import org.openqa.selenium.chrome.ChromeDriver;
 
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
@@ -17,7 +18,7 @@ import java.util.HashMap;
 public class MyTest {
 
    private static HashMap<String, WebDriver> driverObjMap=new HashMap<String, WebDriver>();
-  //  WebDriver driver;
+    WebDriver driver = new ChromeDriver();
     public static WebDriver gerDriverDetails(String className){
         return driverObjMap.get(className);
     }
@@ -26,7 +27,7 @@ public class MyTest {
         return driverObjMap;
     }
 
-	WebDriver driver = Utils.getWebDriverInstance();
+	/*WebDriver driver = Utils.getWebDriverInstance();*/
 
   
 
