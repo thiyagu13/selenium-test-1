@@ -17,7 +17,7 @@
 
 		<classes>
 			
-			<class name="selenium.MyTest" />
+			<class name="selenium.ScreenshotInResultsTest" />
 			
 		</classes>
 	</test> <!-- Test -->

@@ -15,39 +15,47 @@ import java.util.HashMap;
 public class ScreenshotInResultsTest {
 
     private static HashMap<String, WebDriver> driverObjMap=new HashMap<String, WebDriver>();
-    WebDriver driver;
+    public static WebDriver driver; 
     
     @BeforeClass
     public void browserInstantiate(){
-    	System.out.println("Getting Web driver instance from util class");
-		System.setProperty(Constant.GECKO_DRIVER, Constant.GECKO_DRIVER_PATH);
+    	/*System.out.println("Getting Web driver instance from util class");
+		System.setProperty("webdriver.gecko.driver","C:\\Users\\Easy solutions\\git\\selenium-test\\Maven_Selenium\\geckodriver.exe");
 		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
 		capabilities.setCapability("marionette", true);
-		 driver = new FirefoxDriver(capabilities);
-        /*System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\geckodriver.exe");
-        driver=new FirefoxDriver();
-    	System.setProperty(Constant.GECKO_DRIVER, Constant.GECKO_DRIVER_PATH);
-		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-		capabilities.setCapability("marionette", true);
-		WebDriver driver = new FirefoxDriver(capabilities);
-		
-        driverObjMap.put(getClass().getName(),driver);
-        driver.manage().window().maximize();
-        System.out.println("Browser Instantiated..");*/
+		return driver = new FirefoxDriver(capabilities);*/
+    	driver = new ChromeDriver();
     }
 
-  /*  @Test
-    public void openFacebook(){
+    @Test
+    public void openFacebook(WebDriver driver){
         driver.get("http://facebook.com");
-        System.out.println("Facebook Opened ..");
+      //we expect the title “Google “ should be present
+    	String Expectedtitle = "Facebook � log in or sign up";
+    	//it will fetch the actual title
+    	String Actualtitle = driver.getTitle();
+    	System.out.println("Before Assetion " + Expectedtitle + Actualtitle);
+    	//it will compare actual title and expected title
+    	Assert.assertEquals(Actualtitle, Expectedtitle);
+    	//print out the result
+    	System.out.println("After Assertion " + Expectedtitle + Actualtitle + " Title matched ");
         Assert.fail("Test was failed");
 
-    }*/
+    }
 
     @Test
     public void openGoogle(){
-        driver.get("http://google.com");
-        System.out.println("Google Opened ..");
+    	//it will open the goggle page
+    	driver.get("http://google.in");
+    	//we expect the title “Google “ should be present
+    	String Expectedtitle = "Google";
+    	//it will fetch the actual title
+    	String Actualtitle = driver.getTitle();
+    	System.out.println("Before Assetion " + Expectedtitle + Actualtitle);
+    	//it will compare actual title and expected title
+    	Assert.assertEquals(Actualtitle, Expectedtitle);
+    	//print out the result
+    	System.out.println("After Assertion " + Expectedtitle + Actualtitle + " Title matched ");
        // Assert.fail("Test was failed");
 
     }

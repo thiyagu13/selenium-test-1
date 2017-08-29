@@ -1,7 +1,6 @@
 package selenium;
 
-import selenium.MyTest;
-
+import selenium.ScreenshotInResultsTest;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -24,14 +23,10 @@ public class LocalScreenshot extends TestListenerAdapter {
 		Reporter.setCurrentTestResult(result);
 		String sTestClassName = result.getTestClass().getRealClass().getSimpleName();
 
-		// System.out.println("Test class name ..."+sTestClassName);
+		 System.out.println("Test class name ..."+sTestClassName);
 		String sFileName = result.getName();
-		// System.out.println("Test method name ..."+sFileName);
-		// driver=
-		// ScreenshotInResultsTest.gerDriverDetails(result.getTestClass().getName());
-		// driver= Test1.gerDriverDetails(result.getTestClass().getName());
+		 System.out.println("Test method name ..."+sFileName);
 			
-	
 		driver = ScreenshotInResultsTest.gerDriverDetails(result.getTestClass().getName());
 		String imagePathInHost = "file:///" + System.getProperty("user.dir")
 				+ Seperator + "screenshots" + Seperator + "LatestResults"

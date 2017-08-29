@@ -40,10 +40,10 @@ public class Utils {
 		return driver;
 	}
 
-	public static void getScreenShot(String file) throws IOException {
+	public static void getScreenShot(WebDriver driver,String file) throws IOException {
 		try {
 
-			File scrFile = ((TakesScreenshot) Constant.driver)
+			File scrFile = ((TakesScreenshot) driver)
 					.getScreenshotAs(OutputType.FILE);
 			DateFormat dateFormat = new SimpleDateFormat("HH_mm_ssa yyyy-MM-dd");
 			Calendar cal = Calendar.getInstance();
