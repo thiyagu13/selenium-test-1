@@ -39,7 +39,7 @@ public class ScreenshotInResultsTest {
     	Assert.assertEquals(Actualtitle, Expectedtitle);
     	//print out the result
     	System.out.println("After Assertion " + Expectedtitle + Actualtitle + " Title matched ");
-        Assert.fail("Test was failed");
+       // Assert.fail("Test was failed");
 
     }
 
