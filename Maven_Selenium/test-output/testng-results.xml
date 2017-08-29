@@ -1,32 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" total="2" passed="1">
+<testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="10051" started-at="2017-08-29T12:44:28Z" finished-at="2017-08-29T12:44:38Z">
+  <suite name="Suite" duration-ms="48762" started-at="2017-08-29T13:25:06Z" finished-at="2017-08-29T13:25:55Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="10051" started-at="2017-08-29T12:44:28Z" finished-at="2017-08-29T12:44:38Z">
+    <test name="Test" duration-ms="48762" started-at="2017-08-29T13:25:06Z" finished-at="2017-08-29T13:25:55Z">
       <class name="selenium.ScreenshotInResultsTest">
-        <test-method status="PASS" signature="browserInstantiate()[pri:0, instance:selenium.ScreenshotInResultsTest@4f970963]" name="browserInstantiate" is-config="true" duration-ms="6470" started-at="2017-08-29T18:14:28Z" finished-at="2017-08-29T18:14:34Z">
+        <test-method status="PASS" signature="browserInstantiate()[pri:0, instance:selenium.ScreenshotInResultsTest@7b49cea0]" name="browserInstantiate" is-config="true" duration-ms="27604" started-at="2017-08-29T18:55:06Z" finished-at="2017-08-29T18:55:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInstantiate -->
-        <test-method status="SKIP" signature="openFacebook(org.openqa.selenium.WebDriver)[pri:0, instance:selenium.ScreenshotInResultsTest@4f970963]" name="openFacebook" duration-ms="0" started-at="2017-08-29T18:14:34Z" finished-at="2017-08-29T18:14:34Z">
-          <exception class="org.testng.TestNGException">
+        <test-method status="FAIL" signature="openFacebook()[pri:0, instance:selenium.ScreenshotInResultsTest@7b49cea0]" name="openFacebook" duration-ms="16996" started-at="2017-08-29T18:55:33Z" finished-at="2017-08-29T18:55:50Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[
-Method openFacebook requires 1 parameters but 0 were supplied in the @Test annotation.]]>
+              <![CDATA[Test was failed]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Method openFacebook requires 1 parameters but 0 were supplied in the @Test annotation.
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:193)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:129)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:378)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:488)
-	at org.testng.internal.Invoker.handleParameters(Invoker.java:1240)
-	at org.testng.internal.Invoker.createParameters(Invoker.java:980)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1070)
+              <![CDATA[java.lang.AssertionError: Test was failed
+	at org.testng.Assert.fail(Assert.java:94)
+	at selenium.ScreenshotInResultsTest.openFacebook(ScreenshotInResultsTest.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
 	at org.testng.TestRunner.privateRun(TestRunner.java:746)
@@ -46,15 +47,15 @@ Method openFacebook requires 1 parameters but 0 were supplied in the @Test annot
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openFacebook -->
-        <test-method status="PASS" signature="openGoogle()[pri:0, instance:selenium.ScreenshotInResultsTest@4f970963]" name="openGoogle" duration-ms="3378" started-at="2017-08-29T18:14:35Z" finished-at="2017-08-29T18:14:38Z">
+        <test-method status="PASS" signature="openGoogle()[pri:0, instance:selenium.ScreenshotInResultsTest@7b49cea0]" name="openGoogle" duration-ms="3735" started-at="2017-08-29T18:55:51Z" finished-at="2017-08-29T18:55:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openGoogle -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:selenium.ScreenshotInResultsTest@4f970963]" name="quitDriver" is-config="true" duration-ms="0" started-at="2017-08-29T18:14:38Z" finished-at="2017-08-29T18:14:38Z">
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:selenium.ScreenshotInResultsTest@7b49cea0]" name="quitDriver" is-config="true" duration-ms="0" started-at="2017-08-29T18:55:55Z" finished-at="2017-08-29T18:55:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->

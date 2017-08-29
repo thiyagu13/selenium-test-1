@@ -19,16 +19,16 @@ public class ScreenshotInResultsTest {
     
     @BeforeClass
     public void browserInstantiate(){
-    	/*System.out.println("Getting Web driver instance from util class");
+    	System.out.println("Getting Web driver instance from util class");
 		System.setProperty("webdriver.gecko.driver","C:\\Users\\Easy solutions\\git\\selenium-test\\Maven_Selenium\\geckodriver.exe");
 		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
 		capabilities.setCapability("marionette", true);
-		return driver = new FirefoxDriver(capabilities);*/
-    	driver = new ChromeDriver();
+		driver = new FirefoxDriver(capabilities);
+    	//driver = new ChromeDriver();
     }
 
     @Test
-    public void openFacebook(WebDriver driver){
+    public void openFacebook(){
         driver.get("http://facebook.com");
       //we expect the title “Google “ should be present
     	String Expectedtitle = "Facebook � log in or sign up";
