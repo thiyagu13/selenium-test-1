@@ -19,6 +19,6 @@ public class Constant {
 		public static String EXCEL_PATH =".\\Testcase.xlsx";
 	
 		/*Call driver */
-		public static WebDriver driver = Utils.getWebDriverInstance();
+		//public static WebDriver driver = Utils.getWebDriverInstance();
 	
 }
