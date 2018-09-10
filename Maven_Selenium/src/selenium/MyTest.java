@@ -44,6 +44,7 @@ public class MyTest {
     public void openGoogle(){
         driver.get("http://google.com");
         System.out.println("Google Opened ..");
+	    System.out.println("selenium-test-1/Maven_Selenium/src/selenium/LocalScreenshot.java");
       //  Assert.fail("Test was failed");
         driver.quit();
 
